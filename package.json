@@ -9,16 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "graphql": "^16.9.0",
+    "graphql-request": "^6.1.0",
+    "next": "14.2.5",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.5"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@graphql-codegen/cli": "^5.0.2",
+    "@graphql-codegen/typescript": "^4.0.9",
+    "@graphql-codegen/typescript-graphql-request": "^6.2.0",
+    "@graphql-codegen/typescript-msw": "^3.0.0",
+    "@graphql-codegen/typescript-operations": "^4.2.3",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.2.5"
+    "eslint-config-next": "14.2.5",
+    "typescript": "^5"
   }
 }
