@@ -1,0 +1,20 @@
+fragment CountryFragment on Country {
+  capital
+  code
+  continent {
+    code
+    name
+  }
+  currencies
+  emoji
+  languages {
+    code
+    name
+    rtl
+  }
+  name
+  phones
+  states {
+    name
+  }
+}

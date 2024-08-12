@@ -1,0 +1,5 @@
+query ListCountriesByCode($code: String) {
+  countries(filter: { code: { eq: $code } }) {
+    ...CountryFragment
+  }
+}
