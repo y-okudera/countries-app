@@ -2,7 +2,7 @@ import useCountries from "@/hooks/useCountries";
 import { useEffect } from "react";
 import Component from "./component";
 
-const Home = () => {
+const Top = () => {
   const { countries, error, fetchCountries } = useCountries();
 
   useEffect(() => {
@@ -16,4 +16,4 @@ const Home = () => {
   return <Component countries={countries} />;
 };
 
-export default Home;
+export default Top;
