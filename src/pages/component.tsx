@@ -1,3 +1,4 @@
+import List from "@/components/List";
 import { Country } from "@/repositories/graphql";
 
 type Props = {
@@ -5,13 +6,7 @@ type Props = {
 };
 
 const Component = ({ countries }: Props) => {
-  return (
-    <>
-      {countries?.map((country) => {
-        return <div key={country.code}>{country.name}</div>;
-      })}
-    </>
-  );
+  return <>{!!countries && <List data={countries} />}</>;
 };
 
 export default Component;
